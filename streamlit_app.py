@@ -34,7 +34,7 @@ avg_price_sqm = round(filtered_df['price_per_sqm'].mean(), 2)
 total_listings = filtered_df.shape[0]
 most_common_neigh = filtered_df['Neighborhood_clean'].mode()[0] if not filtered_df.empty else "N/A"
 
-st.title("🏡 Riyadh Apartments Market Dashboard")
+st.title("🏡 Riyadh Apartments Dashboard")
 
 # KPI Cards
 col1, col2, col3, col4 = st.columns(4)
